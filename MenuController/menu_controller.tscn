@@ -1,0 +1,172 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3ahsdl7gggip"]
+
+[ext_resource type="Script" path="res://MenuController/MenuController.cs" id="1_uqd63"]
+[ext_resource type="Script" path="res://MenuController/AnimationController.cs" id="2_tcggb"]
+
+[node name="MenuController" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uqd63")
+
+[node name="AnimationController" type="Node" parent="."]
+script = ExtResource("2_tcggb")
+
+[node name="LoginPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.4
+anchor_bottom = 1.0
+grow_vertical = 2
+
+[node name="LoginLabel" type="Label" parent="LoginPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.2
+anchor_right = 0.4
+anchor_bottom = 0.3
+text = "Login"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UsernameInput" type="LineEdit" parent="LoginPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45
+anchor_top = 0.2
+anchor_right = 0.95
+anchor_bottom = 0.3
+placeholder_text = "Enter your username"
+alignment = 1
+
+[node name="PasswordLabel" type="Label" parent="LoginPanel"]
+layout_mode = 0
+anchor_left = 0.05
+anchor_top = 0.35
+anchor_right = 0.4
+anchor_bottom = 0.45
+text = "Password"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PasswordInput" type="LineEdit" parent="LoginPanel"]
+layout_mode = 0
+anchor_left = 0.45
+anchor_top = 0.35
+anchor_right = 0.95
+anchor_bottom = 0.45
+placeholder_text = "Enter your password"
+alignment = 1
+secret = true
+
+[node name="LoginButton" type="Button" parent="LoginPanel"]
+layout_mode = 0
+anchor_left = 0.3
+anchor_top = 0.6
+anchor_right = 0.7
+anchor_bottom = 0.7
+text = "Login"
+
+[node name="RegisterButton" type="Button" parent="LoginPanel"]
+layout_mode = 0
+anchor_left = 0.3
+anchor_top = 0.75
+anchor_right = 0.7
+anchor_bottom = 0.85
+text = "Create an account"
+
+[node name="RegisterPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="UsernameLabel" type="Label" parent="RegisterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.2
+anchor_right = 0.4
+anchor_bottom = 0.3
+text = "Username"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UsernameInput" type="LineEdit" parent="RegisterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45
+anchor_top = 0.2
+anchor_right = 0.95
+anchor_bottom = 0.3
+placeholder_text = "Enter your username"
+alignment = 1
+
+[node name="EmailLabel" type="Label" parent="RegisterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.35
+anchor_right = 0.4
+anchor_bottom = 0.45
+text = "Email"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EmailInput" type="LineEdit" parent="RegisterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45
+anchor_top = 0.35
+anchor_right = 0.95
+anchor_bottom = 0.45
+placeholder_text = "Enter your email"
+alignment = 1
+
+[node name="PasswordLabel" type="Label" parent="RegisterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.5
+anchor_right = 0.4
+anchor_bottom = 0.6
+text = "Password"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PasswordInput" type="LineEdit" parent="RegisterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45
+anchor_top = 0.5
+anchor_right = 0.95
+anchor_bottom = 0.6
+placeholder_text = "Enter your password"
+alignment = 1
+secret = true
+
+[node name="RegisterButton" type="Button" parent="RegisterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.7
+anchor_right = 0.7
+anchor_bottom = 0.8
+text = "Register"
+
+[node name="LoginButton" type="Button" parent="RegisterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.85
+anchor_right = 0.7
+anchor_bottom = 0.95
+text = "Already have an account?
+Log in"
